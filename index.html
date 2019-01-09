@@ -11,32 +11,78 @@
 
     <body>
 
-        <!-- Creates the Overall Grid -->
-        <div class="container">
-
-
-            <!--Nav bar-->
-            <nav class="navbar navbar-default" style="background-color: #ffffff;">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Lattitude <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">                
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="navbar-brand" href="#">Lattitude </a></li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-            </nav>
+                      </div>
+                
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                      
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="maxTemp.html">Max Temperature</a></li>
+                                    <li><a href="humidity.html">Humidity</a></li>
+                                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="windSpeed.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                                     
+                          <li><a href="comparison.html">Comparison</a></li>
+                          <li><a href="data.html">Data</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
 
 
+                <div class="container">
+                    <h3 class="text-center">Visualizations</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="maxTemp.html">
+                                    <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                                </a>
+                             </div>   
+                        </div>
+                        <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="humidity.html">
+                                        <img src="Images/Latitude_Vs_Humidity.png" alt="...">
+                                    </a>
+                                 </div>   
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-md-4">
+                                    <div class="thumbnail">
+                                        <a href="cloudiness.html">
+                                            <img src="Images/Latitude_Vs_Cloudiness.png" alt="...">
+                                        </a>
+                                     </div>   
+                                </div>
+                                <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <a href="windSpeed.html">
+                                        <img src="Images/Latitude_Vs_WindSpeed.png" alt="...">
+                                    </a>
+                                 </div>   
+                            </div>
+                           
+                        </div>
+                 </div>  
+           
+
+        <div class="main-content">
             
             <div class="row">
                 <!--Summary on the left side of landing page-->
