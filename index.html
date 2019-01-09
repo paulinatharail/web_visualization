@@ -5,12 +5,17 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Web Visualizations</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" href="style.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         </head>
 
-    <body>
-
+    <body class="greybkgrnd">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                       <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,60 +48,23 @@
                 </nav>
 
 
-                <div class="container">
-                    <h3 class="text-center">Visualizations</h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="thumbnail">
-                                <a href="maxTemp.html">
-                                    <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
-                                </a>
-                             </div>   
-                        </div>
-                        <div class="col-md-4">
-                                <div class="thumbnail">
-                                    <a href="humidity.html">
-                                        <img src="Images/Latitude_Vs_Humidity.png" alt="...">
-                                    </a>
-                                 </div>   
-                            </div>
-                    </div>
+        <div class="container">
 
-                    <div class="row">
-                            <div class="col-md-4">
-                                    <div class="thumbnail">
-                                        <a href="cloudiness.html">
-                                            <img src="Images/Latitude_Vs_Cloudiness.png" alt="...">
-                                        </a>
-                                     </div>   
-                                </div>
-                                <div class="col-md-4">
-                                <div class="thumbnail">
-                                    <a href="windSpeed.html">
-                                        <img src="Images/Latitude_Vs_WindSpeed.png" alt="...">
-                                    </a>
-                                 </div>   
-                            </div>
-                           
-                        </div>
-                 </div>  
-           
-
-        <div class="main-content">
             
             <div class="row">
+                
                 <!--Summary on the left side of landing page-->
-                <div class="col-md-8">
-                        
-                    <h2 class="labelNames">Summary: Lattitude vs. X</h2>
-                    <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                <div class="col-md-8 blocks">
+                    <div class="container">
+                        <h3 class="text-center labelNames">Summary: Lattitude vs X.</h3>
+                        <img class="main-img" src="Images/Latitude_Vs_MaxTemperature.png" alt="maxTemp" align="left">
                      
                         
-                    <p>The purpose of this project was to analyze how weather changes as you 
+                    <p class="para">The purpose of this project was to analyze how weather changes as you 
                             get closer to the equator. To accomplish this analysis, we first pulled 
                             data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
                     </p>
-                    <p>
+                    <p class="para">
                             After assembling the dataset, we used Matplotlib to plot various aspects of the 
                             weather vs. Lattitude. Factors we looked at included: temperature, cloudiness,
                             wind speed and humidity. This site provides the source data and Visualizations
@@ -105,16 +73,59 @@
                     </p>
                         
                       
+                    </div>
                 </div>
+
+
+
+                <!--Thumbnail image links on the right side-->
+                <div class="col-md-3 blocks">
+                <div class="container">
+                        
+                        
+                        <div class="row">
+                            <h3 class="text-center labelNames">Visualizations</h3>
+                            <div class="col-sm-2">
+                                <div class="thumbnail pic">
+                                    <a href="maxTemp.html">
+                                        <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                                    </a>
+                                 </div>   
+                            </div>
+                            <div class="col-sm-2">
+                                    <div class="thumbnail pic">
+                                        <a href="humidity.html">
+                                            <img src="Images/Latitude_Vs_Humidity.png" alt="...">
+                                        </a>
+                                     </div>   
+                                </div>
+                        </div>
+    
+                        <div class="row">
+                                <div class="col-sm-2">
+                                        <div class="thumbnail pic">
+                                            <a href="cloudiness.html">
+                                                <img src="Images/Latitude_Vs_Cloudiness.png" alt="...">
+                                            </a>
+                                         </div>   
+                                    </div>
+                                    <div class="col-sm-2">
+                                    <div class="thumbnail pic">
+                                        <a href="windSpeed.html">
+                                            <img src="Images/Latitude_Vs_WindSpeed.png" alt="...">
+                                        </a>
+                                     </div>   
+                                </div>
+                               
+                            </div>
+                     </div>  
+                    </div>
+               
+    
+
+
                 
-                <!--Miniature images on the right side of landing page-->
-                <div class="col-md-4">
-                    <h2 class="labelNames">Visualizations</h2>
-                    <img class="minImage" src="Images/Latitude_Vs_Cloudiness.png" alt="...">
-                    <img class="minImage" src="Images/Latitude_Vs_Humidity.png" alt="...">
-                    <img class="minImage" src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
-                    <img class="minImage" src="Images/Latitude_Vs_Humidity.png" alt="...">
-                </div>
+                
 
 
             </div>

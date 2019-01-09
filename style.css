@@ -10,8 +10,9 @@
 }
 
 .active {
-  background: rgb(72, 191, 151);
+  background: rgb(28, 182, 131);
   color: white;
+  
 }
 
   .margin-top-80 {
@@ -25,16 +26,42 @@
 
   .labelNames {
     color:rgb(72, 191, 151);
-    font-size: 18pt;
+    font-size: 24pt;
     font: bold;
-    text-align: center;
+    text-align: left;
 
   }
+
+.blocks{
+  padding: 50px;
+}
 
   .col-md-8 {
-    background: white;
+    background: lightblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
   }
 
+  .greybkgrnd{
+    background: lightgray;
+  }
+
+.para{
+  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+  .main-img {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   .col-md-6 {
     background: white;
@@ -46,8 +73,12 @@
   }
 
 
-  .col-md-4 {
-    background: white;
+  .col-md-3 {
+    background: lightsteelblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
   }
 
 
