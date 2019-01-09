@@ -10,13 +10,8 @@
         </head>
 
     <body>
-
-        <!-- Creates the Overall Grid -->
-        <div class="container">
-
-
-            <!--Nav bar-->
-            <nav class="navbar navbar-default" style="background-color: #ffffff;">
+        <!--Nav bar-->
+        <nav class="navbar navbar-default" style="background-color: #ffffff;">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Lattitude <span class="sr-only">(current)</span></a></li>
@@ -34,9 +29,10 @@
                     </li>
                 </ul>
             </div>
-            </nav>
+        </nav>
 
-
+       <!-- Main content-->
+       <div class="container">
             
             <div class="row">
                 <!--Summary on the left side of landing page-->
@@ -46,17 +42,13 @@
                     <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
                      
                         
-                    <p>The purpose of this project was to analyze how weather changes as you 
-                            get closer to the equator. To accomplish this analysis, we first pulled 
-                            data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    <p>As expected, the weather becomes significantly warmer as one approaches
+                        the equator (0 Deg. Lattitude). More interestingly, however, is the fact that
+                        the southern hemisphere tends to be warmer this time of year than the northern
+                        hemisphere. This may be due to the tilt of th earth at the time of the year
+                        this data was gathered.
                     </p>
-                    <p>
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the 
-                            weather vs. Lattitude. Factors we looked at included: temperature, cloudiness,
-                            wind speed and humidity. This site provides the source data and Visualizations
-                            created as part of the analysis, as well as explanations and descriptions of 
-                            any trends and correlations witnessed.
-                    </p>
+
                         
                       
                 </div>
@@ -72,7 +64,6 @@
 
 
             </div>
-            
         </div>
 
      

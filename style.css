@@ -5,7 +5,61 @@
     background: deepskyblue;
   }
   
+.bodyDiv {
+  background: lightgray;
+}
+
+
+.container-fluid{
+  background: white;
+}
+
+.active {
+  background: rgb(72, 191, 151);
+  color: white;
+}
+
   .margin-top-80 {
     margin-top: 80px;
   }
   
+  .container {
+    background: lightgray;
+    
+  }
+
+  .labelNames {
+    color:rgb(72, 191, 151);
+    font-size: 18pt;
+    font: bold;
+    text-align: center;
+
+  }
+
+  .col-md-8 {
+    background: white;
+  }
+
+
+  .col-md-6 {
+    background: white;
+    padding: 20px;
+    border-top: 2pt;
+    border-bottom: 2pt;
+    border-top-color: black;
+    border-bottom-color: black;
+  }
+
+
+  .col-md-4 {
+    background: white;
+  }
+
+
+
+
+  .minImage {
+    height: 200px;
+    width: 300px;
+    align-self: center;
+  }
