@@ -1,22 +1,41 @@
 
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+
+
+/* CSS media queries to change the display when the screen size is less than 480 px */
+@media (max-width: 480px) {
+  .min-media {
     background-color: rgb(28, 182, 131);
-  }
-}
+  } 
+
   
-.bodyDiv {
-  background: lightgray;
+
+  .label{
+    display: grid;
+    size: 10px;
+  }
+
+  .greybkgrnd{
+    background: white;
+  }
+
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    overflow: visible!important;
+    border: none;
+    margin-right: 15px;
+  } 
+ 
+
+}
+
+.test{
+  border: 2pt solid red;
 }
 
 
-.container-fluid{
-  background: white;
-}
 
+/* used for the nav bar styling eg(Lattitude) */
 .active {
   background: rgb(28, 182, 131);
   color: white;
@@ -24,18 +43,16 @@
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px; 
-  
+  line-height: 50%;
 }
 
+/* used in adding a left margin to some components*/
 .leftmargin{
   margin-left: 20px;
   padding: 20px;
 }
 
-.rightmargin{
-  margin-right:20px;
-}
-
+/* Used for the text over each image in the comparison page (eg: vs. Max Temp */
 .comparison-sub-heading{
   text-align: center;
   color:rgb(72, 191, 151);
@@ -44,11 +61,7 @@
   font-family: 'Times New Roman', Times, serif;
 }
   
-  .main-content {
-    background: lightgray;
-    
-  }
-
+/* Used for styling the label names (headings) on all pages */
   .labelNames {
     color:rgb(72, 191, 151);
     font-size: 24pt;
@@ -58,18 +71,31 @@
     margin-left: 20px;
   }
 
+  .label{
+    display: none;
+  }
+
+ /* Adds margin for many components on all pages */ 
 .blocks{
   margin-top: 50px;
 }
 
+/* Used to change font color on the right side of nav bar*/
 .rightnav{
   color:black;
 }
 
+/* White background for the nav bar*/
+.container-fluid{
+  background: white;
+}
+
+/* gray background for the body of the site on all pages */
 .greybkgrnd{
   background: lightgray;
 }
 
+/* formatting for text on all pages */
 .para{
   padding: 30px;
   padding-left: 30px;
@@ -79,6 +105,7 @@
   text-align: justify;
 }
 
+/* formatting for the main image on the visualization pages*/
   .main-img {
     height: 450px;
     width: 450px;
@@ -88,14 +115,12 @@
     padding-right: 10px;
   }
 
+  /* images on the right side of the summary and 4 visualization pages*/
   .minImage {
     max-width: 100%;
   }
 
-.test {
-    border: 2px solid red;
-  } 
-
+/* footer */
  .footer {
   position: fixed;
   left: 0;
