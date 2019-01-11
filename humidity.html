@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Web Visualizations - Humidity</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        </head>
+
+    <body class="greybkgrnd">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">                
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="navbar-brand active" href="index.html">Lattitude </a></li>
+                        </ul>
+                      </div>
+                
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                      
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown rightnav">
+                                <a href="#" class="dropdown-toggle rightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="maxTemp.html">Max Temperature</a></li>
+                                    <li><a href="humidity.html">Humidity</a></li>
+                                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="windSpeed.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                                     
+                          <li><a class="rightnav" href="comparison.html">Comparison</a></li>
+                          <li><a class="rightnav"  href="data.html">Data</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+        <div class="container">
+
+            
+            <div class="row blocks">
+                
+                <!--Summary on the left side of landing page-->
+                <div class="col-sm-8">
+                    <div class="thumbnail">
+                        <h3 class="text-center labelNames">Humidity</h3>
+                        <hr/>
+                        <img class="main-img" src="Images/Latitude_Vs_Humidity.png" alt="maxTemp" align="center">
+                        <p class="para"> As expected, the weather becomes significantly warmer as one approaches the 
+                            equator (0 Degree Lattitude). More interestingly, however, is the fact that the Southern
+                            Hemisphere tends to be warmer this time of the year than the northern hemisphere. This may 
+                            be due to the tilt of the earth at the time of the year this data was gathered.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!--Thumbnail image links on the right side-->
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                    <h3 class="text-center labelNames">Visualizations</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="maxTemp.html">
+                                <img class="minImage" src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="humidity.html">
+                                <img class="minImage rightImage" src="Images/Latitude_Vs_Humidity.png" alt="...">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="row blocks"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="cloudiness.html">
+                                    <img class="minImage" src="Images/Latitude_Vs_Cloudiness.png" alt="...">
+                                </a>
+                                         
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="windSpeed.html">
+                                    <img class="minImage"  src="Images/Latitude_Vs_WindSpeed.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="footer-green"></div>
+            <div class="footer">
+                <p>
+                    © Copyright Coding Bootcamp 2017
+                </p>
+            </div>
+      
+      </footer>
+      <!-- Footer -->
+     
+    </body>
+
+</html>

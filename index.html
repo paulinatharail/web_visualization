@@ -21,15 +21,15 @@
                       <!-- Brand and toggle get grouped for better mobile display -->
                       <div class="navbar-header">                
                         <ul class="nav navbar-nav">
-                            <li class="active"><a class="navbar-brand" href="#">Lattitude </a></li>
+                            <li class="active"><a class="navbar-brand active" href="#">Lattitude </a></li>
                         </ul>
                       </div>
                 
                       <!-- Collect the nav links, forms, and other content for toggling -->
                       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                      
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                            <li class="dropdown rightnav">
+                                <a href="#" class="dropdown-toggle rightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="maxTemp.html">Max Temperature</a></li>
                                     <li><a href="humidity.html">Humidity</a></li>
@@ -38,8 +38,8 @@
                                 </ul>
                             </li>
                                      
-                          <li><a href="comparison.html">Comparison</a></li>
-                          <li><a href="data.html">Data</a></li>
+                          <li><a class="rightnav" href="comparison.html">Comparison</a></li>
+                          <li><a class="rightnav"  href="data.html">Data</a></li>
                         </ul>
                       </div>
                       <!-- /.navbar-collapse -->
@@ -51,87 +51,79 @@
         <div class="container">
 
             
-            <div class="row">
+            <div class="row blocks">
                 
                 <!--Summary on the left side of landing page-->
-                <div class="col-md-8 blocks">
-                    <div class="container">
+                <div class="col-sm-8">
+                    <div class="thumbnail">
                         <h3 class="text-center labelNames">Summary: Lattitude vs X.</h3>
+                        <hr/>
                         <img class="main-img" src="Images/Latitude_Vs_MaxTemperature.png" alt="maxTemp" align="left">
-                     
-                        
-                    <p class="para">The purpose of this project was to analyze how weather changes as you 
+                        <p class="para">The purpose of this project was to analyze how weather changes as you 
                             get closer to the equator. To accomplish this analysis, we first pulled 
                             data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                    </p>
-                    <p class="para">
+                        </p>
+                        <p class="para">
                             After assembling the dataset, we used Matplotlib to plot various aspects of the 
                             weather vs. Lattitude. Factors we looked at included: temperature, cloudiness,
                             wind speed and humidity. This site provides the source data and Visualizations
                             created as part of the analysis, as well as explanations and descriptions of 
                             any trends and correlations witnessed.
-                    </p>
-                        
-                      
+                        </p> 
                     </div>
                 </div>
 
 
 
                 <!--Thumbnail image links on the right side-->
-                <div class="col-md-3 blocks">
-                <div class="container">
-                        
-                        
-                        <div class="row">
-                            <h3 class="text-center labelNames">Visualizations</h3>
-                            <div class="col-sm-2">
-                                <div class="thumbnail pic">
-                                    <a href="maxTemp.html">
-                                        <img src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
-                                    </a>
-                                 </div>   
-                            </div>
-                            <div class="col-sm-2">
-                                    <div class="thumbnail pic">
-                                        <a href="humidity.html">
-                                            <img src="Images/Latitude_Vs_Humidity.png" alt="...">
-                                        </a>
-                                     </div>   
-                                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                    <h3 class="text-center labelNames">Visualizations</h3>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="maxTemp.html">
+                                <img class="minImage" src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                            </a>
                         </div>
-    
-                        <div class="row">
-                                <div class="col-sm-2">
-                                        <div class="thumbnail pic">
-                                            <a href="cloudiness.html">
-                                                <img src="Images/Latitude_Vs_Cloudiness.png" alt="...">
-                                            </a>
-                                         </div>   
-                                    </div>
-                                    <div class="col-sm-2">
-                                    <div class="thumbnail pic">
-                                        <a href="windSpeed.html">
-                                            <img src="Images/Latitude_Vs_WindSpeed.png" alt="...">
-                                        </a>
-                                     </div>   
-                                </div>
-                               
-                            </div>
-                     </div>  
+                        <div class="col-lg-6">
+                            <a href="humidity.html">
+                                <img class="minImage rightImage" src="Images/Latitude_Vs_Humidity.png" alt="...">
+                            </a>
+                        </div> 
                     </div>
-               
-    
-
-
-                
-                
-
-
-            </div>
+                    <div class="row blocks"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="cloudiness.html">
+                                    <img class="minImage" src="Images/Latitude_Vs_Cloudiness.png" alt="...">
+                                </a>
+                                         
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="windSpeed.html">
+                                    <img class="minImage"  src="Images/Latitude_Vs_WindSpeed.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             
+            </div>
         </div>
 
+
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="footer-green"></div>
+            <div class="footer">
+                <p>
+                    © Copyright Coding Bootcamp 2017
+                </p>
+            </div>
+      
+      </footer>
+      <!-- Footer -->
      
     </body>
 

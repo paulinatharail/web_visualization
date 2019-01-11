@@ -4,67 +4,109 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Web Visualizations</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <title>Web Visualizations - Comparisons</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <link rel="stylesheet" href="style.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         </head>
 
-    <body>
-        <div class="bodyDiv">
-        <!--Nav bar-->
-        <nav class="navbar navbar-default" style="background-color: #ffffff;">
-            <div class="container-fluid">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Lattitude <span class="sr-only">(current)</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+    <body class="greybkgrnd">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">                
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="navbar-brand active" href="index.html">Lattitude </a></li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                      </div>
+                
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">                      
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown rightnav">
+                                <a href="#" class="dropdown-toggle rightnav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="maxTemp.html">Max Temperature</a></li>
+                                    <li><a href="humidity.html">Humidity</a></li>
+                                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                                    <li><a href="windSpeed.html">Wind Speed</a></li>
+                                </ul>
+                            </li>
+                                     
+                          <li><a class="rightnav" href="comparison.html">Comparison</a></li>
+                          <li><a class="rightnav"  href="data.html">Data</a></li>
+                        </ul>
+                      </div>
+                      <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
 
 
-        <!-- Main content-->
         <div class="container">
-            
-            <!--Row1: with 2 visualizations-->
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="labelNames">vs. Cloudiness</h2>
-                    <img class="minImage" src="Images/Latitude_Vs_Cloudiness.png">
 
-                </div>  
-                <div class="col-md-6">
-                    <h2 class="labelNames">vs. Max Temperature</h2>
-                    <img class="minImage" src="Images/Latitude_Vs_MaxTemperature.png">
-
-                </div>  
-            </div>
             
-            <!--Row2: with 2 visualizations-->
             <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="labelNames">vs. Humidity</h2>
-                        <img class="minImage" src="Images/Latitude_Vs_Humidity.png">
-    
-                    </div>  
-                    <div class="col-md-6">
-                        <h2 class="labelNames">vs. Wind Speed</h2>
-                        <img class="minImage" src="Images/Latitude_Vs_WindSpeed.png">
-    
-                    </div>  
-            </div>
+
+                <div class="col-lg-8">
+                    <div class="thumbnail">
+                    <h3 class="text-center labelNames">Comparisons: Lattitude vs. X</h3>
+                    <hr/>
+                    <p class="leftmargin">Click on any plot to get an in-depth analysis.</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p class="comparison-sub-heading">vs. Max Temperature</p>
+                            <a href="maxTemp.html">
+                                <img class="minImage" src="Images/Latitude_Vs_MaxTemperature.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p class="comparison-sub-heading">vs. Humidity</p>
+                            <a href="humidity.html">
+                                <img class="minImage rightImage" src="Images/Latitude_Vs_Humidity.png" alt="...">
+                            </a>
+                        </div> 
+                    </div>
+                    <div class="row blocks"></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p class="comparison-sub-heading">vs. Cloudiness</p>
+                                <a href="cloudiness.html">
+                                    <img class="minImage" src="Images/Latitude_Vs_Cloudiness.png" alt="...">
+                                </a>
+                                         
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p class="comparison-sub-heading">vs. Humidity</p>
+                                <a href="windSpeed.html">
+                                    <img class="minImage"  src="Images/Latitude_Vs_WindSpeed.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             
+            </div>
         </div>
+
+
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="footer-green"></div>
+            <div class="footer">
+                <p>
+                    © Copyright Coding Bootcamp 2017
+                </p>
+            </div>
+      
+      </footer>
+      <!-- Footer -->
+     
     </body>
 
-    </html>
+</html>
